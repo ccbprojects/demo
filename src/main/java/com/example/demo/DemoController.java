@@ -9,7 +9,7 @@ public class DemoController {
     @GetMapping("/")
     public String hello() {
         
-        String page = "Hello Timmy y Butters y Cartman y Kyle!";    
+        String page = "Hello Timmy y Butters y Cartman y Kyle y Stan!";    
         return String.format(page);
     }
 }
