@@ -1,0 +1,13 @@
+---
+applications:
+
+- name: demo
+  memory: 1024M
+  timeout: 300
+  random-route: true
+  buildpacks:
+    - sap_java_buildpack
+  env:
+    JBP_CONFIG_COMPONENTS: '{ "jres": ["com.sap.xs.java.buildpack.jre.SAPMachineJRE"] }'
+    JBP_CONFIG_SAP_MACHINE_JRE: '{ "version": "17.+" }'
+  path: target/demo-0.0.1-SNAPSHOT.jar
